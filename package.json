@@ -1,0 +1,24 @@
+{
+  "name": "youtubeclonebackend",
+  "version": "1.0.0",
+  "description": "Backend implementation based on a tutorial https://www.freecodecamp.org/news/build-youtube-with-react/\r 1. Install Postgresql to the local drive with an installer    \r 2. Move to this project folder  \r 3. Install Prisma to the folder https://www.prisma.io/docs/concepts/components/prisma-cli/installation  \r 4. Form the tutorial, create \"schema.prisma\" on the project root. The tutorial says \"prisma.schema\" but it is not correct.\r 5. Install Prisma client via \"npm install @prisma/client\". It creates a database by reading the schema file.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "prisma": "^2.30.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimmSimmPopcornSnack/YouTubeCloneBackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimmSimmPopcornSnack/YouTubeCloneBackend/issues"
+  },
+  "homepage": "https://github.com/SimmSimmPopcornSnack/YouTubeCloneBackend#readme"
+}
