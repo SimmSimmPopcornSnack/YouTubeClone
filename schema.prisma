@@ -2,8 +2,8 @@
 
 datasource db {
     provider = "postgresql"
-    url = env("localhost")
-//    url = env("DATABASE_URL")
+//    url = "postgresql://postgres:Immature_9@localhost:5432/utclonedb"
+    url = env("DATABASE_URL")
 }
 
 generator client {
