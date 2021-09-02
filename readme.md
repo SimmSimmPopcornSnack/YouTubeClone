@@ -9,4 +9,5 @@ Implementation based on a tutorial https://www.freecodecamp.org/news/build-youtu
 8. Try a hello-world example https://expressjs.com/en/starter/hello-world.html. Rename app.helloworld.js to app.js and run it on Node.js from VSCode. Open "localhost:3000" from a browser, then you will see "Hello world".
 9. Run "app.js" in server/src on VSCode, or Node prompt via "node app.js".
 10. Open "http://localhost:3001/api/v1/video" or "http://localhost:3001/api/v1/video/trend" from a browser, it will show "{"videos":[]}".
+11. For "user.js" and "authorization.js". "authorization.js" only works if they find a given user in the databese. But, because the database is empty, "authorization.js" does not work. "user.js" uses "authorization.js" internally, so "user.js" does not work either. When starting from "app.js", "user.js" does not work because you cannot input cookies.
 

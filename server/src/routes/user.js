@@ -4,18 +4,15 @@ import Prisma from "../../../node_modules/@prisma/client/index.js"
 const { PrismaClient } = Prisma
 import express from "express"
 
-// import Protect from "../middleware/authorization";
-// const { protect } = Protect;
+import { protect } from "../middleware/authorization.js";
 
 const prisma = new PrismaClient();
 
 function getUserRoutes() {
-  const router = express.Router();
+    const router = express.Router();
+    router.get("/liked-videos", protect, getLikedVideos);
 
-//   router.get("/liked-videos", protect, getLikedVideos);
-  router.get("/liked-videos", getLikedVideos);
-    
-  return router;
+    return router;
 }
 
 function getLikedVideos(req, res) {
